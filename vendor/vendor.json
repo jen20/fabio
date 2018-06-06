@@ -17,7 +17,7 @@
 		{"path":"github.com/gobwas/glob/syntax/lexer","checksumSHA1":"umyztSrQrQIl9JgwhDDb6wrSLeI=","revision":"19c076cdf202b3d1c0489bdfa2f2f289f634474b","revisionTime":"2018-02-08T21:18:42Z"},
 		{"path":"github.com/gobwas/glob/util/runes","checksumSHA1":"vux29fN5O22F3QPLOnjQ37278vg=","revision":"19c076cdf202b3d1c0489bdfa2f2f289f634474b","revisionTime":"2018-02-08T21:18:42Z"},
 		{"path":"github.com/gobwas/glob/util/strings","checksumSHA1":"Sxp2AHWkkLkIq6w9aMcLmzcwD6w=","revision":"19c076cdf202b3d1c0489bdfa2f2f289f634474b","revisionTime":"2018-02-08T21:18:42Z"},
-		{"path":"github.com/hashicorp/consul/api","checksumSHA1":"GsJ84gKbQno8KbojhVTgSVWNues=","revision":"402636ff2db998edef392ac6d59210d2170b3ebf","revisionTime":"2017-04-05T04:22:14Z","version":"v0.8.0","versionExact":"v0.8.0"},
+		{"path":"github.com/hashicorp/consul/api","checksumSHA1":"L4bajYItNZdsrcbvTza6vtLCDis=","revision":"d968d8b64842604bfcb10a8635d9f8baede75bb6","revisionTime":"2017-06-09T14:34:00Z","version":"v0.8.0","versionExact":"v0.8.0"},
 		{"path":"github.com/hashicorp/errwrap","checksumSHA1":"cdOCt0Yb+hdErz8NAQqayxPmRsY=","revision":"7554cd9344cec97297fa6649b055a8c98c2a1e55","revisionTime":"2014-10-27T22:47:10-07:00"},
 		{"path":"github.com/hashicorp/go-cleanhttp","checksumSHA1":"Uzyon2091lmwacNsl1hCytjhHtg=","revision":"ad28ea4487f05916463e2423a55166280e8254b5","revisionTime":"2016-04-07T17:41:26Z"},
 		{"path":"github.com/hashicorp/go-multierror","checksumSHA1":"lrSl49G23l6NhfilxPM0XFs5rZo=","revision":"d30f09973e19c1dfcd120b2d9c4f168e68d6b5d5","revisionTime":"2015-09-16T13:57:42-07:00"},
