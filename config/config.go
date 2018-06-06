@@ -31,6 +31,7 @@ type CertSource struct {
 }
 
 type Listen struct {
+	RawAddr       string
 	Addr          string
 	Proto         string
 	ReadTimeout   time.Duration

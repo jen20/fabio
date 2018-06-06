@@ -23,6 +23,8 @@
 		{"path":"github.com/hashicorp/go-multierror","checksumSHA1":"lrSl49G23l6NhfilxPM0XFs5rZo=","revision":"d30f09973e19c1dfcd120b2d9c4f168e68d6b5d5","revisionTime":"2015-09-16T13:57:42-07:00"},
 		{"path":"github.com/hashicorp/go-retryablehttp","checksumSHA1":"GBDE1KDl/7c5hlRPYRZ7+C0WQ0g=","revision":"f4ed9b0fa01a2ac614afe7c897ed2e3d8208f3e8","revisionTime":"2016-08-10T17:22:55Z"},
 		{"path":"github.com/hashicorp/go-rootcerts","checksumSHA1":"A1PcINvF3UiwHRKn8UcgARgvGRs=","revision":"6bb64b370b90e7ef1fa532be9e591a81c3493e00","revisionTime":"2016-05-03T09:34:40-05:00"},
+		{"path":"github.com/hashicorp/go-sockaddr","checksumSHA1":"J47ySO1q0gcnmoMnir1q1loKzCk=","revision":"6d291a969b86c4b633730bfc6b8b9d64c3aafed9","revisionTime":"2018-03-20T11:50:54Z"},
+		{"path":"github.com/hashicorp/go-sockaddr/template","checksumSHA1":"PDp9DVLvf3KWxhs4G4DpIwauMSU=","revision":"6d291a969b86c4b633730bfc6b8b9d64c3aafed9","revisionTime":"2018-03-20T11:50:54Z"},
 		{"path":"github.com/hashicorp/hcl","checksumSHA1":"5LrCq/ydlbL6pq1cdmuxiw7QV98=","revision":"d7400db7143f8e869812e50a53acd6c8d92af3b8","revisionTime":"2016-06-07T00:19:40Z"},
 		{"path":"github.com/hashicorp/hcl/hcl/ast","checksumSHA1":"WP5ODRo9+USuAsKYPu5RW3q8Epg=","revision":"d7400db7143f8e869812e50a53acd6c8d92af3b8","revisionTime":"2016-06-07T00:19:40Z"},
 		{"path":"github.com/hashicorp/hcl/hcl/parser","checksumSHA1":"SVw0qm83Anf5T2GkYabn+f7Ibv0=","revision":"d7400db7143f8e869812e50a53acd6c8d92af3b8","revisionTime":"2016-06-07T00:19:40Z"},

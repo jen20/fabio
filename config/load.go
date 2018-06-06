@@ -13,6 +13,7 @@ import (
 	"strings"
 	"time"
 
+	sockaddr_template "github.com/hashicorp/go-sockaddr/template"
 	"github.com/magiconair/properties"
 )
 
@@ -62,7 +63,7 @@ func parse(args []string) (cmdline []string, path string, version bool, err erro
 		case arg == "-v" || arg == "-version" || arg == "--version":
 			return nil, "", true, nil
 
-		// config file without '='
+			// config file without '='
 		case arg == "-cfg" || arg == "--cfg":
 			if i >= len(args)-1 {
 				return nil, "", false, errInvalidConfig
@@ -70,7 +71,7 @@ func parse(args []string) (cmdline []string, path string, version bool, err erro
 			path = args[i+1]
 			i++
 
-		// config file with '='. needs unquoting
+			// config file with '='. needs unquoting
 		case strings.HasPrefix(arg, "-cfg=") || strings.HasPrefix(arg, "--cfg="):
 			if strings.HasPrefix(arg, "-cfg=") {
 				path = arg[len("-cfg="):]
@@ -89,7 +90,7 @@ func parse(args []string) (cmdline []string, path string, version bool, err erro
 				return nil, "", false, errInvalidConfig
 			}
 
-		// ignore test flags
+			// ignore test flags
 		case strings.HasPrefix(arg, "-test."):
 			continue
 
@@ -321,7 +322,7 @@ func parseListen(cfg map[string]string, cs map[string]CertSource, readTimeout, w
 	for k, v := range cfg {
 		switch k {
 		case "", "addr":
-			l.Addr = v
+			l.RawAddr = v
 		case "proto":
 			l.Proto = v
 			switch l.Proto {
@@ -381,6 +382,11 @@ func parseListen(cfg map[string]string, cs map[string]CertSource, readTimeout, w
 	if l.Addr == "" {
 		return Listen{}, fmt.Errorf("need listening host:port")
 	}
+	resolvedAddr, err := sockaddr_template.Parse(l.RawAddr)
+	if err != nil {
+		return Listen{}, fmt.Errorf("error resolving address: %s", err)
+	}
+	l.Addr = resolvedAddr
 	if csName != "" && l.Proto != "https" && l.Proto != "tcp" {
 		return Listen{}, fmt.Errorf("cert source requires proto 'https' or 'tcp'")
 	}
